@@ -3,7 +3,7 @@
 #include <vector>
 
 
-std::string about = "\n\nThis adventure takes place in a subsection my futuristic Dungeons and Dragons realm, on the planet Gargorath. \n\nThis world has gone through many transformation over the millenia and has eventually settled into provinces dictated by current politics and geography.  Magic is used alongside technology, as the two are inseparable.  Space flight is possible, with space taxis available at 10,000 gp (gold pieces).  There isn't much danger left, except for typical crime, well-guarded ancient secrets, and ... space dragons!\n\n";
+std::string about = "\n\nThis adventure takes place in a subsection my dystopian Dungeons and Dragons realm, on the planet Gargorath. \n\nThis world has gone through many transformation over the millenia and has eventually settled into provinces dictated by current politics and geography.  Magic is used alongside technology, as the two are inseparable.  Space flight is possible, with space taxis available at 10,000 gp (gold pieces).  There isn't much danger left, except for typical crime, well-guarded ancient secrets, and ... space dragons!\n\n";
 std::string options = "Actions are numerical. Refer to above text for available options.";
 std::string bad_ending = "\n\nOof, sorry, looks like you got a bad ending. 😨 Good luck next time!\n\n";
 std::string good_ending = "\n\nCongrats, you got a good ending!!! 🙌 🙌 🙌\n\n";
