@@ -50,7 +50,7 @@ void give_options(std::vector<std::string> options){
 
 void print_gp(){
   std::cout << "============================\n";
-  std::cout << "You started with 10,000 gp.\n";
+  std::cout << "You started with 10,500 gp.\n";
   std::cout << "You now have " << gp << "gp.\n";
   std::cout << "============================\n";
 }
@@ -67,13 +67,13 @@ int main(){
 
   while(game_runs){
 
-    std::cout << "You're a level 1 person with 10,000 gold credits to your name.  It's a misty mid-autumn day on the planet Gargorath, and you find yourself outside of a PUB with plywood nailed over its windows and door.  The door is guarded by a security gate.";
+    std::cout << "You're a level 1 person with 10,000 gold credits to your name.  It's a misty mid-autumn day on the planet Gargorath, and you find yourself outside of a PUB with plywood nailed over its windows and door.";
     give_options({"Look", "Move on", "0 to quit"});
 
     int first_choice = get_choice();
 
     if(first_choice == 1){
-      std::cout << "\nYou see some advertisements for punk bands, tattoo artists, an advert to find a missing scroll, a missing person poster, and a quest to find a DRAGON'S LAIR.";
+      std::cout << "\nYou see some advertisements for punk bands, an advert to find a missing scroll, a missing person poster, and a quest to find a DRAGON'S LAIR.";
 
       bool looking = true;
 
@@ -86,11 +86,11 @@ int main(){
         }
         else if(second_choice == 2){
 
-          std::cout << "You take a quick look around, wondering how you might find such an individual.  You take a quick snapshot with your SHINY NEW DEVICE and start looking around the building.  In no time flat, you find a sad, cloaked figure, huddled between a fence and this building.  You peer under the hood and notice that the craggy nose is a perfect match for the illustration.  In fact, you really do think it is FRED.  \"Hey, FRED,\" you say.  He grumbles slightly.";
+          std::cout << "You take a quick look around, wondering how you might find such an individual.  You take a quick snapshot with your SHINY NEW DEVICE and start looking around the building.  In no time flat, you find a cloaked figure, leaning on the pub wall between a fence and this building.  You peer under the hood and notice that the craggy nose is a perfect match for the illustration.  In fact, you really do think it is FRED.  \"Hey, FRED,\" you say.  He grumbles slightly.";
           bool talking = true;
 
           while(talking){
-            std::cout << "\nFRED looks up, head cocked in impatience, awaiting your question.";
+            std::cout << "\nFRED looks up, head cocked in impatience, awaiting your question in true NPC style.";
             give_options({"Ask about SCROLL", "Ask about DRAGON'S LAIR", "Ask about PUB", "Ask about WANTED AD", "0 to leave Fred alone" });
             int third_choice = get_choice();
 
@@ -111,7 +111,7 @@ int main(){
               knows_dragon_secret = true;
             }
             else if(third_choice == 3){
-              std::cout << "\"Oh yeah, that old beaut. Closed down about 2 years ago, when old HILDA passed away, Torm rest her soul.\" He bows his head dramatically.  The name HILDA sounds awfully familiar.  You wonder if you have a great aunt HILDA somewhere in the line.\n\n";
+              std::cout << "\"Oh yeah, that old beaut. Closed down about 3 months ago, when old HILDA passed away, Torm rest her soul.\" He bows his head dramatically.  The name HILDA sounds awfully familiar.  You wonder if you have a great aunt HILDA somewhere in the line.\n\n";
               pub_bequeathed = true;
             }
             else if(third_choice == 4){
